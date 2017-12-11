@@ -1,0 +1,47 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/ctsButtonLayput"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/cts_item_click_order_bg"
+        android:paddingLeft="8dp"
+        android:paddingRight="18dp"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/ctsPromotion"
+            style="@style/cts_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="满百减5"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/ctsOperationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ctsPromotion"
+            android:textColor="@color/cts_travel_schedule_button_text_color"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="按钮二" />
+
+        <ImageView
+            android:id="@+id/ctsRedPointIv"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ctsOperationBtn"
+            android:src="@drawable/cts_red_point"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+</merge>
